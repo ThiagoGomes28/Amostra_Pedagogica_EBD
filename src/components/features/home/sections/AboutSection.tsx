@@ -40,8 +40,8 @@ export function AboutSection() {
       <div className="section-shell">
         <SectionHeading
           eyebrow="Sobre"
-          title="Sobre a Amostra Pedagógica"
-          description="A Amostra Pedagógica é um momento especial para apresentar à igreja um pouco do que é desenvolvido durante os encontros da Escola Bíblica Dominical."
+          title="Sobre a Mostra Pedagógica"
+          description="A Mostra Pedagógica é um momento especial para apresentar à igreja um pouco do que é desenvolvido durante os encontros da Escola Bíblica Dominical."
         />
 
         <div className="mt-14 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
@@ -63,7 +63,7 @@ export function AboutSection() {
               Uma exposição preparada com carinho e excelência
             </h3>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Durante o ano, cada classe estuda, cria e produz. A Amostra abre as
+              Durante o ano, cada classe estuda, cria e produz. A Mostra abre as
               portas para que toda a igreja veja de perto esse caminho — em
               cartazes, maquetes, apresentações e espaços preparados pelas turmas.
             </p>

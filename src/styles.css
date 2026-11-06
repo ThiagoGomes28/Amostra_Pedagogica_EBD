@@ -5,9 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system — Amostra Pedagógica EBD
- * Azul como cor principal, dourado como destaque, verde em detalhes.
- * Todos os valores de cor em oklch. Nunca usar cores fixas nos componentes.
+ * Design system — Mostra Pedagógica EBD
+ * Paleta em verde: principal, intermediário, destaque e fundo marfim.
+ * Mantém as variáveis de tema consistentes para toda a interface.
  */
 
 @theme inline {
@@ -57,61 +57,55 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --shadow-soft: 0 1px 2px oklch(0.546 0.215 263 / 6%), 0 8px 24px -12px oklch(0.546 0.215 263 / 14%);
-  --shadow-lift: 0 2px 4px oklch(0.546 0.215 263 / 6%), 0 20px 40px -18px oklch(0.546 0.215 263 / 22%);
+  --shadow-soft: 0 1px 2px rgb(11 70 25 / 6%), 0 8px 24px -12px rgb(11 70 25 / 14%);
+  --shadow-lift: 0 2px 4px rgb(11 70 25 / 6%), 0 20px 40px -18px rgb(11 70 25 / 22%);
 }
 
 :root {
   --radius: 1rem;
 
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.279 0.041 260);
+  --background: #f5f3e9;
+  --foreground: #123a1e;
 
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.279 0.041 260);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.279 0.041 260);
+  --card: #ffffff;
+  --card-foreground: #123a1e;
+  --popover: #ffffff;
+  --popover-foreground: #123a1e;
 
-  /* #2563EB */
-  --primary: oklch(0.546 0.215 263);
-  --primary-foreground: oklch(0.995 0.002 247);
-  /* #60A5FA */
-  --primary-light: oklch(0.735 0.135 256);
-  /* #EFF6FF */
-  --primary-soft: oklch(0.973 0.014 254);
+  --primary: #0b4619;
+  --primary-foreground: #f5f3e9;
+  --primary-light: #3c8a2e;
+  --primary-soft: #eaf5da;
 
-  /* #F8FAFC */
-  --secondary: oklch(0.984 0.003 247);
-  --secondary-foreground: oklch(0.279 0.041 260);
+  --secondary: #edf5df;
+  --secondary-foreground: #123a1e;
 
-  --muted: oklch(0.984 0.003 247);
-  --muted-foreground: oklch(0.554 0.046 257);
+  --muted: #f7f5ee;
+  --muted-foreground: #47664b;
 
-  --accent: oklch(0.973 0.014 254);
-  --accent-foreground: oklch(0.546 0.215 263);
+  --accent: #eaf5da;
+  --accent-foreground: #0b4619;
 
-  /* #F59E0B / #FEF3C7 */
-  --gold: oklch(0.769 0.166 70);
-  --gold-soft: oklch(0.962 0.06 96);
-  /* #DCFCE7 */
-  --mint: oklch(0.962 0.045 152);
-  --mint-foreground: oklch(0.5 0.12 155);
+  --gold: #8ac753;
+  --gold-soft: #edf8d9;
+  --mint: #d7efbf;
+  --mint-foreground: #0b4619;
 
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.995 0.002 247);
+  --destructive: #b13a2d;
+  --destructive-foreground: #f5f3e9;
 
-  --border: oklch(0.929 0.013 255);
-  --input: oklch(0.929 0.013 255);
-  --ring: oklch(0.546 0.215 263);
+  --border: #dce7d1;
+  --input: #dce7d1;
+  --ring: #0b4619;
 
-  --sidebar: oklch(0.984 0.003 247);
-  --sidebar-foreground: oklch(0.279 0.041 260);
-  --sidebar-primary: oklch(0.546 0.215 263);
-  --sidebar-primary-foreground: oklch(0.995 0.002 247);
-  --sidebar-accent: oklch(0.973 0.014 254);
-  --sidebar-accent-foreground: oklch(0.546 0.215 263);
-  --sidebar-border: oklch(0.929 0.013 255);
-  --sidebar-ring: oklch(0.546 0.215 263);
+  --sidebar: #f6f5ee;
+  --sidebar-foreground: #123a1e;
+  --sidebar-primary: #0b4619;
+  --sidebar-primary-foreground: #f5f3e9;
+  --sidebar-accent: #eaf5da;
+  --sidebar-accent-foreground: #0b4619;
+  --sidebar-border: #dce7d1;
+  --sidebar-ring: #0b4619;
 }
 
 @layer base {

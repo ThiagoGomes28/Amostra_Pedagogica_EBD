@@ -15,7 +15,7 @@ export type GalleryItem = {
 export const gallery: GalleryItem[] = [
   {
     src: g1,
-    alt: "Salão da igreja preparado com os espaços temáticos da Amostra Pedagógica",
+    alt: "Salão da igreja preparado com os espaços temáticos da Mostra Pedagógica",
     span: "sm:col-span-2 sm:row-span-2",
   },
   { src: g2, alt: "Crianças montando um trabalho manual sobre a mesa" },

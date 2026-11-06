@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { HomePage } from "@/pages/HomePage";
 
-const title = "Amostra Pedagógica | Escola Bíblica Dominical";
+const title = "Mostra Pedagógica | Escola Bíblica Dominical";
 const description =
-  "Conheça a Amostra Pedagógica da Escola Bíblica Dominical: um momento de fé, aprendizado, criatividade e comunhão.";
+  "Conheça a Mostra Pedagógica da Escola Bíblica Dominical: um momento de fé, aprendizado, criatividade e comunhão.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Event",
-          name: "Amostra Pedagógica — Escola Bíblica Dominical",
+          name: "Mostra Pedagógica — Escola Bíblica Dominical",
           description,
           eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
           organizer: { "@type": "Organization", name: "Escola Bíblica Dominical" },

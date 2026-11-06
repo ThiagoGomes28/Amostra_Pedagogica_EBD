@@ -19,7 +19,7 @@ export function LocationSection() {
       <div className="section-shell">
         <SectionHeading
           eyebrow="Localização"
-          title="Onde será a Amostra?"
+          title="Onde será a Mostra?"
           description="Estamos preparando tudo para receber você, sua família e seus convidados."
         />
 

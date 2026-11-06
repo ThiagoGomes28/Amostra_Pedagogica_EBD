@@ -10,7 +10,7 @@ export function ScheduleSection() {
         <SectionHeading
           eyebrow="Programação"
           title="Programação do Evento"
-          description="Um roteiro pensado para que cada visitante aproveite todos os momentos da Amostra."
+          description="Um roteiro pensado para que cada visitante aproveite todos os momentos da Mostra."
         />
 
         <ol className="relative mx-auto mt-14 max-w-3xl space-y-5 sm:pl-8">

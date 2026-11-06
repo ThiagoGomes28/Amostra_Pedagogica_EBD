@@ -1,5 +1,5 @@
 export const eventInfo = {
-  name: "Amostra Pedagógica",
+  name: "Mostra Pedagógica",
   organization: "Escola Bíblica Dominical",
   tagline: "Fé que ensina. Conhecimento que transforma.",
   subtitle: "Um encontro de fé, conhecimento e criatividade.",

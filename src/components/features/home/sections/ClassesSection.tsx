@@ -10,7 +10,7 @@ export function ClassesSection() {
         <SectionHeading
           eyebrow="Turmas"
           title="Conheça as turmas participantes"
-          description="Cada turma apresenta um cuidado especial em seu aprendizado, criatividade e participação na proposta da Amostra."
+          description="Cada turma apresenta um cuidado especial em seu aprendizado, criatividade e participação na proposta da Mostra."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

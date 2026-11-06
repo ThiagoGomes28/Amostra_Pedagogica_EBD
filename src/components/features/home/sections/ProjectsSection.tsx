@@ -10,7 +10,7 @@ export function ProjectsSection() {
         <SectionHeading
           eyebrow="Experiências"
           title="O que você vai encontrar"
-          description="A Amostra é organizada em experiências para percorrer, observar e participar."
+          description="A Mostra é organizada em experiências para percorrer, observar e participar."
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
