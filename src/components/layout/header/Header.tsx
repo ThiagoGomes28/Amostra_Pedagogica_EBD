@@ -42,7 +42,7 @@ export function Header() {
           <img
             src={logoEbd}
             alt={`${eventInfo.name} — ${eventInfo.organization}`}
-            className="h-16 w-auto max-w-[320px] object-contain sm:h-[72px]"
+            className="h-16 w-auto max-w-[320px] object-contain sm:h-18"
           />
         </a>
 
