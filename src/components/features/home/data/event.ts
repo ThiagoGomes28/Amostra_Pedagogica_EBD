@@ -5,12 +5,12 @@ export const eventInfo = {
   subtitle: "Um encontro de fé, conhecimento e criatividade.",
   description:
     "Uma celebração do aprendizado desenvolvido nas classes da Escola Bíblica Dominical, reunindo alunos, professores e toda a igreja em uma experiência especial.",
-  date: "[DATA DO EVENTO]",
-  time: "[HORÁRIO]",
-  church: "[NOME DA IGREJA]",
-  address: "[ENDEREÇO DA IGREJA]",
+  date: "06/12",
+  time: "09hs",
+  church: "AD Queimadas",
+  address: "R. Odilon Almeida Barreto, 220",
   theme: "Fé, conhecimento e criatividade",
-  mapsQuery: "[ENDEREÇO DA IGREJA]",
+  mapsQuery: "R. Odilon Almeida Barreto, 220",
   instagram: "#",
   whatsapp: "#",
 } as const;
