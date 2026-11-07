@@ -32,6 +32,14 @@ export function HeroSection() {
             <span className="mt-2 block">EM QUEIMADAS-PB</span>
           </h1>
 
+          <div className="mt-6 lg:hidden">
+            <img
+              src={bookCover}
+              alt="Capa do livro A História da Assembleia de Deus em Queimadas-PB"
+              className="mx-auto h-auto w-[min(70vw,300px)] object-contain drop-shadow-[0_18px_28px_rgba(26,18,12,0.14)]"
+            />
+          </div>
+
           <p className="mt-6 max-w-xl text-base leading-relaxed text-[#4a382d] sm:text-lg">
             Conhecendo a Palavra, Preservando Nossa História e Fortalecendo Nossa Fé.
           </p>
@@ -57,7 +65,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.12, ease: "easeOut" }}
-          className="relative flex justify-center lg:justify-end"
+          className="relative hidden justify-center lg:flex lg:justify-end"
         >
           <div className="w-full max-w-[440px]">
             <img
