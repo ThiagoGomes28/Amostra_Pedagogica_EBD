@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { BookOpenText, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoEbd from "@/assets/logo ebd.png";
 import {
   Sheet,
   SheetClose,
@@ -35,20 +36,14 @@ export function Header() {
       <div className="section-shell flex h-16 items-center justify-between gap-4 sm:h-18">
         <a
           href="#inicio"
-          className="flex items-center gap-2.5 rounded-lg py-1 text-left"
+          className="flex items-center rounded-lg py-1 text-left"
           aria-label={`${eventInfo.name} — início`}
         >
-          <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-            <BookOpenText className="size-4.5" aria-hidden="true" />
-          </span>
-          <span className="leading-tight">
-            <span className="block text-sm font-semibold text-foreground">
-              {eventInfo.name}
-            </span>
-            <span className="block text-[11px] font-medium tracking-wide text-muted-foreground">
-              {eventInfo.organization}
-            </span>
-          </span>
+          <img
+            src={logoEbd}
+            alt={`${eventInfo.name} — ${eventInfo.organization}`}
+            className="h-16 w-auto max-w-[320px] object-contain sm:h-[72px]"
+          />
         </a>
 
         <nav aria-label="Navegação principal" className="hidden lg:block">
