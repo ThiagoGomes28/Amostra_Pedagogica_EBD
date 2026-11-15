@@ -93,6 +93,8 @@ export const exhibitions: Exhibition[] = [
       "Líderes que marcaram a história.",
       "Você sabia?",
     ],
+    ctaLabel: "Explorar história",
+    ctaHref: "#exposicoes",
     note: "A imagem disponível não possui conteúdo textual legível dentro dos blocos; por isso a estrutura foi organizada para receber os textos posteriormente.",
   },
   {
@@ -187,6 +189,8 @@ export const exhibitions: Exhibition[] = [
       "A arte apresenta uma linguagem mais lúdica, sem perder a identidade institucional da Mostra.",
       "Conteúdo complementar em atualização.",
     ],
+    ctaLabel: "Conhecer a exposição",
+    ctaHref: "#exposicoes",
     note: "Os blocos textuais da arte foram preservados apenas como estrutura visual; os textos específicos dos milagres serão inseridos posteriormente.",
   },
   {
