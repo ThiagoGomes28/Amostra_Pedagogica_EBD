@@ -26,6 +26,7 @@ export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encode
 
 export const navLinks = [
   { label: "Início", href: "#inicio" },
+  { label: "Exposições", href: "#exposicoes" },
   { label: "Sobre", href: "#sobre" },
   { label: "Programação", href: "#programacao" },
   { label: "Turmas", href: "#turmas" },

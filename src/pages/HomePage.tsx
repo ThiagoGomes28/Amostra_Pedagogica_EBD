@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/header/Header";
 import { Footer } from "@/components/layout/footer/Footer";
 import { HeroSection } from "@/components/features/home/sections/HeroSection";
+import { ExhibitionsSection } from "@/components/features/home/sections/ExhibitionsSection";
 import { LocationSection } from "@/components/features/home/sections/LocationSection";
 
 export function HomePage() {
@@ -9,6 +10,7 @@ export function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <ExhibitionsSection />
         <LocationSection />
       </main>
       <Footer />
