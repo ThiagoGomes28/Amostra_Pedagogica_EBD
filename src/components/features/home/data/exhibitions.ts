@@ -6,6 +6,14 @@ import mp05 from "@/assets/mps/capas MP05.webp";
 import mp06 from "@/assets/mps/capas MP06.webp";
 import mp07 from "@/assets/mps/capas MP07.webp";
 import mp08 from "@/assets/mps/capas MP08.webp";
+import onePageMp01 from "@/assets/onePages/Mp001.webp";
+import onePageMp02 from "@/assets/onePages/Mp002.webp";
+import onePageMp03 from "@/assets/onePages/Mp003.webp";
+import onePageMp04 from "@/assets/onePages/Mp004.webp";
+import onePageMp05 from "@/assets/onePages/Mp005.webp";
+import onePageMp06 from "@/assets/onePages/Mp006.webp";
+import onePageMp07 from "@/assets/onePages/Mp007.webp";
+import onePageMp08 from "@/assets/onePages/Mp008.webp";
 
 export type Exhibition = {
   id: string;
@@ -21,6 +29,7 @@ export type Exhibition = {
   points: string[];
   ctaLabel?: string;
   ctaHref?: string;
+  onePageUrl?: string;
   note?: string;
 };
 
@@ -46,7 +55,8 @@ export const exhibitions: Exhibition[] = [
       "Comparação entre versões católica e evangélica.",
     ],
     ctaLabel: "Explorar conteúdo",
-    ctaHref: "#exposicoes",
+    ctaHref: onePageMp01,
+    onePageUrl: onePageMp01,
     note: "Podem ser apresentados 66 livros em forma visual para facilitar a compreensão da divisão entre Antigo e Novo Testamento.",
   },
   {
@@ -70,7 +80,8 @@ export const exhibitions: Exhibition[] = [
       "A consumação — a esperança da eternidade.",
     ],
     ctaLabel: "Ver linha do tempo",
-    ctaHref: "#exposicoes",
+    ctaHref: onePageMp02,
+    onePageUrl: onePageMp02,
     note: "Esta exposição pode receber uma linha do tempo bíblica conectando criação, patriarcas, reino, igreja e consumação.",
   },
   {
@@ -94,7 +105,8 @@ export const exhibitions: Exhibition[] = [
       "Você sabia?",
     ],
     ctaLabel: "Explorar história",
-    ctaHref: "#exposicoes",
+    ctaHref: onePageMp03,
+    onePageUrl: onePageMp03,
     note: "A imagem disponível não possui conteúdo textual legível dentro dos blocos; por isso a estrutura foi organizada para receber os textos posteriormente.",
   },
   {
@@ -118,7 +130,8 @@ export const exhibitions: Exhibition[] = [
       "Cristo Rei e Vencedor no Apocalipse.",
     ],
     ctaLabel: "Visão bíblica",
-    ctaHref: "#exposicoes",
+    ctaHref: onePageMp05,
+    onePageUrl: onePageMp05,
     note: "A narrativa pode ser organizada em uma linha visual: Gênesis → Antigo Testamento → Evangelhos → Igreja → Apocalipse.",
   },
   {
@@ -142,7 +155,8 @@ export const exhibitions: Exhibition[] = [
       "A fundação e expansão da Igreja.",
     ],
     ctaLabel: "Ver linha do tempo",
-    ctaHref: "#exposicoes",
+    ctaHref: onePageMp06,
+    onePageUrl: onePageMp06,
     note: "Os principais anos podem ser destacados em sequência: 1901 → 1906 → 1909 → 1910 → 1911.",
   },
   {
@@ -166,7 +180,8 @@ export const exhibitions: Exhibition[] = [
       "Você sabia?",
     ],
     ctaLabel: "Explorar história",
-    ctaHref: "#exposicoes",
+    ctaHref: onePageMp07,
+    onePageUrl: onePageMp07,
     note: "Esta deve ser uma das exposições mais visuais e pode receber uma timeline interativa com os principais anos e acontecimentos.",
   },
   {
@@ -190,7 +205,8 @@ export const exhibitions: Exhibition[] = [
       "Conteúdo complementar em atualização.",
     ],
     ctaLabel: "Conhecer a exposição",
-    ctaHref: "#exposicoes",
+    ctaHref: onePageMp08,
+    onePageUrl: onePageMp08,
     note: "Os blocos textuais da arte foram preservados apenas como estrutura visual; os textos específicos dos milagres serão inseridos posteriormente.",
   },
   {
@@ -214,7 +230,8 @@ export const exhibitions: Exhibition[] = [
       "O que aprendemos com o Quiz Bíblico? Fé, conhecimento e aplicação.",
     ],
     ctaLabel: "Experimentar o Quiz",
-    ctaHref: "#exposicoes",
+    ctaHref: onePageMp04,
+    onePageUrl: onePageMp04,
     note: "Quando a funcionalidade de quiz estiver disponível, este bloco pode abrir a experiência interativa completa.",
   },
 ];

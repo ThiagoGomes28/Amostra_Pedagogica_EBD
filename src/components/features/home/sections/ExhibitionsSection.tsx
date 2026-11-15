@@ -1,10 +1,17 @@
+import { useState } from "react";
 import { motion } from "motion/react";
-import { ArrowDown, ArrowRight } from "lucide-react";
+import { ArrowDown, ArrowRight, Minus, Plus, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { exhibitions } from "@/components/features/home/data/exhibitions";
 
 export function ExhibitionsSection() {
+  const [selectedExhibition, setSelectedExhibition] = useState<
+    (typeof exhibitions)[number] | null
+  >(null);
+  const [zoom, setZoom] = useState(1);
+
   return (
     <section id="exposicoes" className="relative bg-[#f9f7f2] py-20 sm:py-24">
       <div className="section-shell">
@@ -96,11 +103,16 @@ export function ExhibitionsSection() {
 
                     {exhibition.ctaLabel ? (
                       <div className="mt-6">
-                        <Button asChild className="rounded-full bg-primary px-5 text-[11px] font-semibold tracking-[0.18em] text-primary-foreground uppercase shadow-soft">
-                          <a href={exhibition.ctaHref ?? "#exposicoes"}>
-                            {exhibition.ctaLabel}
-                            <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-                          </a>
+                        <Button
+                          type="button"
+                          onClick={() => {
+                            setZoom(1);
+                            setSelectedExhibition(exhibition);
+                          }}
+                          className="rounded-full bg-primary px-5 text-[11px] font-semibold tracking-[0.18em] text-primary-foreground uppercase shadow-soft"
+                        >
+                          {exhibition.ctaLabel}
+                          <ArrowRight className="ml-2 size-4" aria-hidden="true" />
                         </Button>
                       </div>
                     ) : null}
@@ -120,6 +132,78 @@ export function ExhibitionsSection() {
           </div>
         </div>
       </div>
+
+      <Dialog
+        open={Boolean(selectedExhibition)}
+        onOpenChange={(open) => {
+          if (!open) {
+            setSelectedExhibition(null);
+            setZoom(1);
+          }
+        }}
+      >
+        <DialogContent className="max-w-[92vw] overflow-hidden rounded-[1.5rem] border-0 bg-[#f4f1ea] p-0 shadow-[0_30px_80px_rgba(18,39,24,0.28)] sm:max-w-[75vw]">
+          {selectedExhibition ? (
+            <>
+              <DialogTitle className="sr-only">
+                {selectedExhibition.title}
+              </DialogTitle>
+              <div className="relative">
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="icon"
+                  className="absolute right-4 top-4 z-10 h-10 w-10 rounded-full border border-border/60 bg-background text-foreground shadow-soft hover:bg-background/90"
+                  onClick={() => {
+                    setSelectedExhibition(null);
+                    setZoom(1);
+                  }}
+                  aria-label="Fechar visualização"
+                >
+                  <X className="size-4" aria-hidden="true" />
+                </Button>
+
+                <div className="max-h-[82vh] overflow-auto bg-[#f4f1ea]">
+                  <img
+                    src={selectedExhibition.ctaHref ?? selectedExhibition.image}
+                    alt={selectedExhibition.imageAlt}
+                    className="block bg-[#f4f1ea] object-contain transition-transform duration-200"
+                    style={{
+                      width: `${zoom * 100}%`,
+                      minWidth: "100%",
+                      transform: `scale(${zoom})`,
+                      transformOrigin: "top center",
+                    }}
+                  />
+                </div>
+
+                <div className="absolute bottom-4 right-4 flex gap-2 rounded-full border border-border/60 bg-background/85 p-1.5 shadow-soft backdrop-blur-sm">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="icon"
+                    className="h-9 w-9 rounded-full bg-background text-foreground"
+                    onClick={() => setZoom((current) => Number(Math.max(1, current - 0.1).toFixed(1)))}
+                    aria-label="Diminuir zoom"
+                  >
+                    <Minus className="size-4" aria-hidden="true" />
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="icon"
+                    className="h-9 w-9 rounded-full bg-background text-foreground"
+                    onClick={() => setZoom((current) => Number(Math.min(2, current + 0.1).toFixed(1)))}
+                    aria-label="Aumentar zoom"
+                  >
+                    <Plus className="size-4" aria-hidden="true" />
+                  </Button>
+                </div>
+              </div>
+            </>
+          ) : null}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }
