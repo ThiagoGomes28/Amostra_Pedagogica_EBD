@@ -1,11 +1,11 @@
-import galeria1 from "@/assets/galeria-1.jpg";
-import galeria2 from "@/assets/galeria-2.jpg";
-import galeria3 from "@/assets/galeria-3.jpg";
-import galeria4 from "@/assets/galeria-4.jpg";
-import galeria5 from "@/assets/galeria-5.jpg";
-import hero from "@/assets/hero.jpg";
-import turmaJuniores from "@/assets/turma-juniores.jpg";
-import turmaJovens from "@/assets/turma-jovens.jpg";
+import mp01 from "@/assets/mps/capas MP01.webp";
+import mp02 from "@/assets/mps/capas MP02.webp";
+import mp03 from "@/assets/mps/capas MP03.webp";
+import mp04 from "@/assets/mps/capas MP04.webp";
+import mp05 from "@/assets/mps/capas MP05.webp";
+import mp06 from "@/assets/mps/capas MP06.webp";
+import mp07 from "@/assets/mps/capas MP07.webp";
+import mp08 from "@/assets/mps/capas MP08.webp";
 
 export type Exhibition = {
   id: string;
@@ -35,8 +35,8 @@ export const exhibitions: Exhibition[] = [
     preview: "Uma jornada pelos 66 livros da Bíblia e sua divisão entre Antigo e Novo Testamento.",
     introduction:
       "A exposição apresenta a Bíblia como uma coleção de 66 livros e como um conjunto de escritos sagrados, ajudando os visitantes a perceberem sua unidade e sua riqueza histórica.",
-    image: galeria1,
-    imageAlt: "Exposição sobre os livros da Bíblia em destaque na Mostra Pedagógica.",
+    image: mp01,
+    imageAlt: "Capa da exposição MP001 — Conhecendo os Livros da Bíblia.",
     points: [
       "O que é a Bíblia? A palavra Bíblia vem do grego e significa livros.",
       "Antigo Testamento — 39 livros.",
@@ -59,8 +59,8 @@ export const exhibitions: Exhibition[] = [
     preview: "Do começo de tudo até a esperança final, em uma narrativa bíblica completa.",
     introduction:
       "A exposição convida o visitante a seguir a narrativa bíblica desde o início até a esperança final, destacando o plano de Deus para a criação, a redenção e a eternidade.",
-    image: galeria2,
-    imageAlt: "Painel visual com a linha do tempo bíblica da exposição da criação à consumação.",
+    image: mp02,
+    imageAlt: "Capa da exposição MP002 — Da Criação à Consumação.",
     points: [
       "A criação e a queda — o início de tudo.",
       "Os patriarcas — a promessa de Deus.",
@@ -83,8 +83,8 @@ export const exhibitions: Exhibition[] = [
     preview: "Uma viagem pela memória e pelo crescimento da EBD em Queimadas.",
     introduction:
       "A arte apresenta os principais marcos da história da EBD e a formação do ensino bíblico em Queimadas, com uma narrativa que valoriza história, memória e legado espiritual.",
-    image: galeria3,
-    imageAlt: "Exposição dedicada à história da Escola Bíblica Dominical com elementos visuais temáticos.",
+    image: mp03,
+    imageAlt: "Capa da exposição MP003 — A História da Escola Bíblica Dominical.",
     points: [
       "Como surgiu a Assembleia de Deus em Queimadas?",
       "Os primeiros pioneiros.",
@@ -105,8 +105,8 @@ export const exhibitions: Exhibition[] = [
     preview: "Jesus como centro da história bíblica, da promessa à vitória final.",
     introduction:
       "A exposição destaca Jesus Cristo como centro do plano de Deus, mostrando sua presença desde o início das Escrituras até a vitória final no Apocalipse.",
-    image: galeria4,
-    imageAlt: "Exposição visual sobre Cristo em toda a Bíblia, com destaque para a narrativa do Messias.",
+    image: mp05,
+    imageAlt: "Capa da exposição MP005 — Cristo em Toda Bíblia.",
     points: [
       "Quem é Jesus Cristo? Messias, Filho de Deus e Verbo que se fez carne.",
       "Cristo anunciado em Gênesis.",
@@ -129,8 +129,8 @@ export const exhibitions: Exhibition[] = [
     preview: "Os marcos do pentecostalismo no Brasil e a fundação da Assembleia de Deus.",
     introduction:
       "A exposição apresenta os marcos do movimento pentecostal no Brasil, desde o avivamento nos Estados Unidos até a fundação da Assembleia de Deus no país.",
-    image: galeria5,
-    imageAlt: "Vertical histórica da Assembleia de Deus no Brasil e seu início no movimento pentecostal.",
+    image: mp06,
+    imageAlt: "Capa da exposição MP006 — A História da Assembleia de Deus no Brasil.",
     points: [
       "O avivamento pentecostal nos Estados Unidos.",
       "O encontro e a chamada dos missionários.",
@@ -153,8 +153,8 @@ export const exhibitions: Exhibition[] = [
     preview: "A trajetória da igreja em Queimadas, desde os primeiros passos até o crescimento atual.",
     introduction:
       "A exposição conta a trajetória da congregação local, desde os primeiros cultos e pioneiros até a expansão e os principais momentos da obra em Queimadas.",
-    image: hero,
-    imageAlt: "Exposição sobre a história da Assembleia de Deus em Queimadas-PB e seus principais marcos.",
+    image: mp07,
+    imageAlt: "Capa da exposição MP007 — A História da Assembleia de Deus em Queimadas-PB.",
     points: [
       "Como surgiu a Assembleia de Deus em Queimadas?",
       "Os primeiros pioneiros.",
@@ -177,8 +177,8 @@ export const exhibitions: Exhibition[] = [
     preview: "Uma apresentação lúdica sobre a obra milagrosa de Jesus para o público infantil.",
     introduction:
       "A exposição foi organizada para destacar a obra milagrosa de Jesus, mantendo a identidade visual da Mostra com uma leitura mais alegre e acessível para o público infantil.",
-    image: turmaJuniores,
-    imageAlt: "Exposição sobre os grandes milagres de Jesus em grafismo visual e linguagem infantil.",
+    image: mp08,
+    imageAlt: "Capa da exposição MP008 — Os Grandes Milagres de Jesus.",
     points: [
       "Estrutura preparada para receber os conteúdos corretos dos milagres.",
       "MP008 — Jardim Infantil EBD.",
@@ -199,8 +199,8 @@ export const exhibitions: Exhibition[] = [
     preview: "Uma dinâmica interativa para revisar os ensinamentos bíblicos com desafio e alegria.",
     introduction:
       "A exposição apresenta a dinâmica interativa do Quiz Bíblico como uma forma educativa de revisar os conhecimentos bíblicos de maneira competitiva, alegre e acessível.",
-    image: turmaJovens,
-    imageAlt: "Exposição interativa do Quiz Bíblico com dinâmica de resposta e competição.",
+    image: mp04,
+    imageAlt: "Capa da exposição MP004 — Quiz Bíblico.",
     points: [
       "O que é o Quiz Bíblico? Atividade educativa e interativa.",
       "Como funciona a dinâmica? Perguntas projetadas por datashow.",
