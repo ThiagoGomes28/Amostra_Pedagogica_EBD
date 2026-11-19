@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import bookCover from "@/assets/livro.png";
+import bookCover from "@/assets/livro.webp";
 
 export function HeroSection() {
   return (
@@ -50,7 +50,7 @@ export function HeroSection() {
               size="lg"
               className="group rounded-full bg-[#1d1713] px-6 text-sm font-semibold tracking-[0.08em] text-[#f4ebdf] shadow-[0_18px_30px_rgba(29,23,19,0.18)] transition-transform hover:-translate-y-0.5"
             >
-              <a href="#sobre">
+              <a href="#exposicoes">
                 CONHEÇA O LIVRO
                 <ArrowRight
                   className="ml-2 size-4 transition-transform group-hover:translate-x-1"

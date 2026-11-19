@@ -63,7 +63,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <Button asChild className="hidden rounded-full sm:inline-flex">
-            <a href="#programacao">Ver programação</a>
+            <a href="#exposicoes">Ver exposições</a>
           </Button>
 
           <Sheet>
@@ -99,7 +99,7 @@ export function Header() {
                 </ul>
                 <SheetClose asChild>
                   <Button asChild className="mt-6 w-full rounded-full">
-                    <a href="#programacao">Ver programação</a>
+                    <a href="#exposicoes">Ver exposições</a>
                   </Button>
                 </SheetClose>
               </nav>
