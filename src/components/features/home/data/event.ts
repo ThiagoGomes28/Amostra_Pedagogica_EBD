@@ -11,8 +11,7 @@ export const eventInfo = {
   address: "R. Odilon Almeida Barreto, 220",
   theme: "Fé, conhecimento e criatividade",
   mapsQuery: "R. Odilon Almeida Barreto, 220",
-  instagram: "#",
-  whatsapp: "#",
+  instagram: "https://www.instagram.com/adqebd",
 } as const;
 
 export const verse = {

@@ -1,4 +1,5 @@
-import { BookOpenText, Instagram, MapPin, MessageCircle } from "lucide-react";
+import { Instagram, MapPin } from "lucide-react";
+import logoEbd from "@/assets/logo ebd.webp";
 import { Separator } from "@/components/ui/separator";
 import { eventInfo, navLinks } from "@/components/features/home/data/event";
 
@@ -9,9 +10,11 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5">
-              <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-                <BookOpenText className="size-4.5" aria-hidden="true" />
-              </span>
+              <img
+                src={logoEbd}
+                alt="Logo da Escola Bíblica Dominical"
+                className="h-9 w-auto object-contain"
+              />
               <span className="text-sm font-semibold text-foreground">
                 {eventInfo.name} — {eventInfo.organization}
               </span>
@@ -53,15 +56,6 @@ export function Footer() {
                 >
                   <Instagram className="size-4" aria-hidden="true" />
                   Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href={eventInfo.whatsapp}
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
-                >
-                  <MessageCircle className="size-4" aria-hidden="true" />
-                  WhatsApp
                 </a>
               </li>
             </ul>
