@@ -50,7 +50,7 @@ export function HeroSection() {
               size="lg"
               className="group rounded-full bg-[#1d1713] px-6 text-sm font-semibold tracking-[0.08em] text-[#f4ebdf] shadow-[0_18px_30px_rgba(29,23,19,0.18)] transition-transform hover:-translate-y-0.5 xl:px-8 xl:text-base"
             >
-              <a href="#exposicoes">
+              <a href="https://drive.google.com/file/d/14QRY5KATuVXxOCV4tCju5wDGkCuzaeeu/view" target="_blank" rel="noopener noreferrer">
                 CONHEÇA O LIVRO
                 <ArrowRight
                   className="ml-2 size-4 transition-transform group-hover:translate-x-1"
