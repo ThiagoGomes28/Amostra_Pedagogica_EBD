@@ -30,6 +30,7 @@ export type Exhibition = {
   ctaLabel?: string;
   ctaHref?: string;
   onePageUrl?: string;
+  photosUrl?: string;
   note?: string;
 };
 
@@ -54,9 +55,10 @@ export const exhibitions: Exhibition[] = [
       "Curiosidades sobre línguas, capítulos e traduções da Bíblia.",
       "Comparação entre versões católica e evangélica.",
     ],
-    ctaLabel: "Explorar conteúdo",
+    ctaLabel: "Explorar Conteúdo",
     ctaHref: onePageMp01,
     onePageUrl: onePageMp01,
+    photosUrl: "#",
     note: "Podem ser apresentados 66 livros em forma visual para facilitar a compreensão da divisão entre Antigo e Novo Testamento.",
   },
   {
@@ -79,9 +81,10 @@ export const exhibitions: Exhibition[] = [
       "Jesus Cristo e a expansão da Igreja.",
       "A consumação — a esperança da eternidade.",
     ],
-    ctaLabel: "Ver linha do tempo",
+    ctaLabel: "Explorar Conteúdo",
     ctaHref: onePageMp02,
     onePageUrl: onePageMp02,
+    photosUrl: "#",
     note: "Esta exposição pode receber uma linha do tempo bíblica conectando criação, patriarcas, reino, igreja e consumação.",
   },
   {
@@ -104,9 +107,10 @@ export const exhibitions: Exhibition[] = [
       "Líderes que marcaram a história.",
       "Você sabia?",
     ],
-    ctaLabel: "Explorar história",
+    ctaLabel: "Explorar Conteúdo",
     ctaHref: onePageMp03,
     onePageUrl: onePageMp03,
+    photosUrl: "#",
     note: "A imagem disponível não possui conteúdo textual legível dentro dos blocos; por isso a estrutura foi organizada para receber os textos posteriormente.",
   },
   {
@@ -129,9 +133,10 @@ export const exhibitions: Exhibition[] = [
       "Premiação e participação com incentivo bíblico e comunitário.",
       "O que aprendemos com o Quiz Bíblico? Fé, conhecimento e aplicação.",
     ],
-    ctaLabel: "Experimentar o Quiz",
+    ctaLabel: "Explorar Conteúdo",
     ctaHref: onePageMp04,
     onePageUrl: onePageMp04,
+    photosUrl: "#",
     note: "Quando a funcionalidade de quiz estiver disponível, este bloco pode abrir a experiência interativa completa.",
   },
   {
@@ -154,9 +159,10 @@ export const exhibitions: Exhibition[] = [
       "Cristo presente na Igreja.",
       "Cristo Rei e Vencedor no Apocalipse.",
     ],
-    ctaLabel: "Visão bíblica",
+    ctaLabel: "Explorar Conteúdo",
     ctaHref: onePageMp05,
     onePageUrl: onePageMp05,
+    photosUrl: "#",
     note: "A narrativa pode ser organizada em uma linha visual: Gênesis → Antigo Testamento → Evangelhos → Igreja → Apocalipse.",
   },
   {
@@ -179,9 +185,10 @@ export const exhibitions: Exhibition[] = [
       "O surgimento da Assembleia de Deus.",
       "A fundação e expansão da Igreja.",
     ],
-    ctaLabel: "Ver linha do tempo",
+    ctaLabel: "Explorar Conteúdo",
     ctaHref: onePageMp06,
     onePageUrl: onePageMp06,
+    photosUrl: "#",
     note: "Os principais anos podem ser destacados em sequência: 1901 → 1906 → 1909 → 1910 → 1911.",
   },
   {
@@ -204,9 +211,10 @@ export const exhibitions: Exhibition[] = [
       "Líderes que marcaram a história.",
       "Você sabia?",
     ],
-    ctaLabel: "Explorar história",
+    ctaLabel: "Explorar Conteúdo",
     ctaHref: onePageMp07,
     onePageUrl: onePageMp07,
+    photosUrl: "#",
     note: "Esta deve ser uma das exposições mais visuais e pode receber uma timeline interativa com os principais anos e acontecimentos.",
   },
   {
@@ -229,9 +237,10 @@ export const exhibitions: Exhibition[] = [
       "A arte apresenta uma linguagem mais lúdica, sem perder a identidade institucional da Mostra.",
       "Conteúdo complementar em atualização.",
     ],
-    ctaLabel: "Conhecer a exposição",
+    ctaLabel: "Explorar Conteúdo",
     ctaHref: onePageMp08,
     onePageUrl: onePageMp08,
+    photosUrl: "#",
     note: "Os blocos textuais da arte foram preservados apenas como estrutura visual; os textos específicos dos milagres serão inseridos posteriormente.",
   },
 ];

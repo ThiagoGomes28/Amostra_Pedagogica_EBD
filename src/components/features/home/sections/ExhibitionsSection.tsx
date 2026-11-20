@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { ArrowDown, ArrowRight, Minus, Plus, X } from "lucide-react";
+import { ArrowRight, Minus, Plus, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -10,6 +10,7 @@ export function ExhibitionsSection() {
   const [selectedExhibition, setSelectedExhibition] = useState<
     (typeof exhibitions)[number] | null
   >(null);
+  const [selectedImage, setSelectedImage] = useState("");
   const [zoom, setZoom] = useState(1);
 
   return (
@@ -102,17 +103,30 @@ export function ExhibitionsSection() {
                     </p>
 
                     {exhibition.ctaLabel ? (
-                      <div className="mt-6">
+                      <div className="mt-6 flex flex-wrap gap-3">
                         <Button
                           type="button"
                           onClick={() => {
                             setZoom(1);
+                            setSelectedImage(exhibition.ctaHref ?? exhibition.image);
                             setSelectedExhibition(exhibition);
                           }}
                           className="rounded-full bg-primary px-5 text-[11px] font-semibold tracking-[0.18em] text-primary-foreground uppercase shadow-soft"
                         >
                           {exhibition.ctaLabel}
                           <ArrowRight className="ml-2 size-4" aria-hidden="true" />
+                        </Button>
+                        <Button
+                          asChild
+                          variant="outline"
+                          className="rounded-full border-primary/30 bg-background px-5 text-[11px] font-semibold tracking-[0.18em] text-primary uppercase shadow-soft hover:bg-primary-soft"
+                        >
+                          <a
+                            href={exhibition.photosUrl ?? "#"}
+                            aria-label={`Ver fotos da exposição ${exhibition.title}`}
+                          >
+                            Ver fotos
+                          </a>
                         </Button>
                       </div>
                     ) : null}
@@ -138,6 +152,7 @@ export function ExhibitionsSection() {
         onOpenChange={(open) => {
           if (!open) {
             setSelectedExhibition(null);
+            setSelectedImage("");
             setZoom(1);
           }
         }}
@@ -156,6 +171,7 @@ export function ExhibitionsSection() {
                   className="absolute right-4 top-4 z-10 h-10 w-10 rounded-full border border-border/60 bg-background text-foreground shadow-soft hover:bg-background/90"
                   onClick={() => {
                     setSelectedExhibition(null);
+                    setSelectedImage("");
                     setZoom(1);
                   }}
                   aria-label="Fechar visualização"
@@ -165,7 +181,7 @@ export function ExhibitionsSection() {
 
                 <div className="max-h-[82vh] overflow-auto bg-[#f4f1ea]">
                   <img
-                    src={selectedExhibition.ctaHref ?? selectedExhibition.image}
+                    src={selectedImage || selectedExhibition.image}
                     alt={selectedExhibition.imageAlt}
                     className="block bg-[#f4f1ea] object-contain transition-transform duration-200"
                     style={{
