@@ -79,7 +79,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[85vw] max-w-sm">
               <SheetHeader>
-                <SheetTitle className="text-left">{eventInfo.name}</SheetTitle>
+                <SheetTitle className="text-left">AD. Queimadas-PB</SheetTitle>
               </SheetHeader>
               <Separator />
               <nav aria-label="Navegação mobile" className="px-4">

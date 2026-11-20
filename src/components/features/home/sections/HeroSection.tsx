@@ -44,7 +44,7 @@ export function HeroSection() {
             Conhecendo a Palavra, Preservando Nossa História e Fortalecendo Nossa Fé.
           </p>
 
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row lg:mt-12 lg:justify-center xl:mt-14 xl:justify-start">
+          <div className="mt-10 flex flex-col gap-3 lg:mt-12 lg:items-center xl:mt-14 xl:items-start">
             <Button
               asChild
               size="lg"
@@ -56,6 +56,17 @@ export function HeroSection() {
                   className="ml-2 size-4 transition-transform group-hover:translate-x-1"
                   aria-hidden="true"
                 />
+              </a>
+            </Button>
+
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="rounded-full border-[#1d1713]/25 px-6 text-sm font-semibold tracking-[0.08em] text-[#1d1713] shadow-soft transition-transform hover:-translate-y-0.5 hover:bg-[#1d1713] hover:text-[#f4ebdf] xl:px-8 xl:text-base"
+            >
+              <a href="https://wa.me/5583991560850?text=Ol%C3%A1%21%20Vi%20o%20livro%20%2A%E2%80%9CA%20Hist%C3%B3ria%20da%20Assembleia%20de%20Deus%20em%20Queimadas-PB%E2%80%9D%2A%20no%20site%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20adquiri-lo.%20Poderia%20me%20informar%20o%20valor%20e%20como%20posso%20fazer%20a%20compra%3F" target="_blank" rel="noopener noreferrer">
+                QUERO ADQUIRIR O LIVRO
               </a>
             </Button>
           </div>
