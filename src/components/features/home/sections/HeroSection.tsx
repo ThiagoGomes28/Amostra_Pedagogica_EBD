@@ -10,14 +10,14 @@ export function HeroSection() {
       className="relative isolate overflow-hidden bg-(--background) px-2 pt-28 pb-16 sm:px-4 sm:pt-32 lg:px-6 lg:pt-36 lg:pb-24 xl:px-8 xl:pt-40 xl:pb-28"
     >
 
-      <div className="section-shell grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 xl:grid-cols-[1.1fr_0.9fr] xl:gap-20">
+      <div className="section-shell grid items-center gap-12 lg:grid-cols-1 lg:justify-items-center lg:gap-10 xl:grid-cols-[1.1fr_0.9fr] xl:justify-items-stretch xl:gap-20">
         <motion.div
           initial={{ opacity: 0, x: -26, y: 18 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="max-w-xl xl:max-w-2xl"
+          className="max-w-xl lg:mx-auto lg:text-center xl:max-w-2xl xl:text-left"
         >
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3 lg:justify-center xl:justify-start">
             <p className="inline-flex rounded-full border border-[#7d5840]/20 bg-[#f7f1e7]/80 px-3 py-1.5 text-[11px] font-bold tracking-[0.22em] text-[#4d2f1f] shadow-soft backdrop-blur-sm">
               MOSTRA PEDAGÓGICA EBD
             </p>
@@ -40,11 +40,11 @@ export function HeroSection() {
             />
           </div>
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-[#4a382d] sm:text-lg lg:text-lg xl:max-w-2xl xl:text-xl">
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-[#4a382d] sm:text-lg lg:mx-auto lg:max-w-2xl lg:text-lg xl:mx-0 xl:max-w-2xl xl:text-xl">
             Conhecendo a Palavra, Preservando Nossa História e Fortalecendo Nossa Fé.
           </p>
 
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row lg:mt-12 xl:mt-14">
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row lg:mt-12 lg:justify-center xl:mt-14 xl:justify-start">
             <Button
               asChild
               size="lg"
@@ -65,7 +65,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.12, ease: "easeOut" }}
-          className="relative hidden justify-center lg:flex lg:justify-end"
+          className="relative hidden justify-center lg:flex lg:justify-center xl:flex xl:justify-end"
         >
           <div className="w-full max-w-110 xl:max-w-125">
             <img

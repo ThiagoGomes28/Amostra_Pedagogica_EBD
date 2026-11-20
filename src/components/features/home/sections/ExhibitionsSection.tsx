@@ -13,7 +13,7 @@ export function ExhibitionsSection() {
   const [zoom, setZoom] = useState(1);
 
   return (
-    <section id="exposicoes" className="relative bg-[#f9f7f2] py-20 sm:py-24">
+    <section id="exposicoes" className="relative bg-[#f9f7f2] py-20 sm:py-24 lg:py-28 xl:py-32">
       <div className="section-shell">
         <SectionHeading
           eyebrow="Exposições"
@@ -41,7 +41,7 @@ export function ExhibitionsSection() {
           </nav>
         </div>
 
-        <div className="mt-12 lg:grid lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10">
+        <div className="mt-12 lg:grid lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-8 xl:grid-cols-[260px_minmax(0,1fr)] xl:gap-12">
           <aside className="hidden lg:block">
             <nav
               aria-label="Lista das exposições"
@@ -73,7 +73,7 @@ export function ExhibitionsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.55, delay: index * 0.05, ease: "easeOut" }}
-                className="scroll-mt-28 rounded-[2rem] border border-[#d9e4d2] bg-background/90 p-5 shadow-soft sm:p-7 lg:p-8"
+                className="scroll-mt-28 rounded-[2rem] border border-[#d9e4d2] bg-background/90 p-5 shadow-soft sm:p-7 lg:p-8 xl:p-10"
               >
                 <div className="flex items-center justify-between gap-4 border-b border-border/60 pb-4">
                   <div>
@@ -89,15 +89,15 @@ export function ExhibitionsSection() {
                   </span>
                 </div>
 
-                <div className="mt-8 grid gap-5 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+                <div className="mt-8 grid gap-5 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-8 xl:gap-12">
                   <div className="order-2 lg:order-1">
                     <p className="text-[11px] font-semibold tracking-[0.24em] text-primary uppercase">
                       {exhibition.subtitle}
                     </p>
-                    <h3 className="mt-3 font-serif text-3xl font-semibold leading-tight tracking-[-0.04em] text-foreground sm:text-4xl lg:text-[2.5rem]">
+                    <h3 className="mt-3 font-serif text-3xl font-semibold leading-tight tracking-[-0.04em] text-foreground sm:text-4xl lg:text-[2.5rem] xl:text-5xl">
                       {exhibition.title}
                     </h3>
-                    <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base">
+                    <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base lg:max-w-lg xl:text-lg">
                       {exhibition.preview}
                     </p>
 
@@ -123,7 +123,7 @@ export function ExhibitionsSection() {
                       src={exhibition.image}
                       alt={exhibition.imageAlt}
                       loading="lazy"
-                      className="h-full min-h-[250px] w-full rounded-[1.3rem] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                      className="h-full min-h-62.5 w-full rounded-[1.3rem] object-cover transition-transform duration-700 group-hover:scale-[1.02] lg:min-h-90 xl:min-h-105"
                     />
                   </figure>
                 </div>
@@ -142,7 +142,7 @@ export function ExhibitionsSection() {
           }
         }}
       >
-        <DialogContent className="max-w-[92vw] overflow-hidden rounded-[1.5rem] border-0 bg-[#f4f1ea] p-0 shadow-[0_30px_80px_rgba(18,39,24,0.28)] sm:max-w-[75vw]">
+        <DialogContent className="max-w-[92vw] overflow-hidden rounded-[1.5rem] border-0 bg-[#f4f1ea] p-0 shadow-[0_30px_80px_rgba(18,39,24,0.28)] sm:max-w-[75vw] lg:max-w-[68vw] xl:max-w-[60vw]">
           {selectedExhibition ? (
             <>
               <DialogTitle className="sr-only">
@@ -177,7 +177,7 @@ export function ExhibitionsSection() {
                   />
                 </div>
 
-                <div className="absolute bottom-4 right-4 hidden gap-2 rounded-full border border-border/60 bg-background/85 p-1.5 shadow-soft backdrop-blur-sm md:flex">
+                <div className="absolute bottom-4 right-4 hidden gap-2 rounded-full border border-border/60 bg-background/85 p-1.5 shadow-soft backdrop-blur-sm lg:flex xl:gap-3">
                   <Button
                     type="button"
                     variant="outline"
