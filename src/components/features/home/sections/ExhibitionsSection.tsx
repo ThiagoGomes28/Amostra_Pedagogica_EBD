@@ -177,7 +177,7 @@ export function ExhibitionsSection() {
                   />
                 </div>
 
-                <div className="absolute bottom-4 right-4 flex gap-2 rounded-full border border-border/60 bg-background/85 p-1.5 shadow-soft backdrop-blur-sm">
+                <div className="absolute bottom-4 right-4 hidden gap-2 rounded-full border border-border/60 bg-background/85 p-1.5 shadow-soft backdrop-blur-sm md:flex">
                   <Button
                     type="button"
                     variant="outline"
