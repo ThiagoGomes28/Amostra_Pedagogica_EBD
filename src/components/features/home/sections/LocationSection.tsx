@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
-import { eventInfo, mapsUrl } from "@/components/features/home/data/event";
+import { directionsUrl, eventInfo, mapsUrl } from "@/components/features/home/data/event";
 
 const details = [
   { icon: Church, label: "Igreja", value: eventInfo.church },
@@ -51,7 +51,7 @@ export function LocationSection() {
                   asChild
                   className="w-full rounded-full transition-transform hover:-translate-y-0.5"
                 >
-                  <a href={mapsUrl} target="_blank" rel="noopener noreferrer">
+                  <a href={directionsUrl} target="_blank" rel="noopener noreferrer">
                     <Navigation className="mr-1 size-4" aria-hidden="true" />
                     Como chegar
                   </a>
