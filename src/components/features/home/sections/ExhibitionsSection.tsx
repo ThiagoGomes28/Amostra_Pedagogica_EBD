@@ -123,7 +123,7 @@ export function ExhibitionsSection() {
                       src={exhibition.image}
                       alt={exhibition.imageAlt}
                       loading="lazy"
-                      className="h-full min-h-62.5 w-full rounded-[1.3rem] object-cover transition-transform duration-700 group-hover:scale-[1.02] lg:min-h-90 xl:min-h-105"
+                      className="h-auto w-full rounded-[1.3rem] object-contain transition-transform duration-700 group-hover:scale-[1.01]"
                     />
                   </figure>
                 </div>
